@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0e5a3a"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="青学合格ナビ">
+<title>青山学院大学の学部ガイド|青学合格ナビ</title>
+<meta name="description" content="青山学院大学の学部を青山キャンパスと相模原キャンパスに分けて紹介。それぞれの学びの特徴と、志望学部を絞るための候補メモ機能つき。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://YOUR-DOMAIN.example/gakubu.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="青山学院大学の学部ガイド|青学合格ナビ">
+<meta property="og:url" content="https://YOUR-DOMAIN.example/gakubu.html">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "青山学院大学の学部ガイド", "url": "https://YOUR-DOMAIN.example/gakubu.html", "inLanguage": "ja"}</script>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7f3;--surface:#ffffff;--ink:#17231d;--sub:#55645b;--line:#d6ddd5;--green:#0e5a3a;--green-d:#0a4129;--mint:#dcebe1;--pencil:#f2c94c;--on-green:#ffffff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1713;--surface:#17231d;--ink:#e8efe9;--sub:#9fb0a5;--line:#2b3b32;--green:#5cc593;--green-d:#8fdbb5;--mint:#1d3126;--pencil:#f2c94c;--on-green:#0a1a12;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1713;--surface:#17231d;--ink:#e8efe9;--sub:#9fb0a5;--line:#2b3b32;--green:#5cc593;--green-d:#8fdbb5;--mint:#1d3126;--pencil:#f2c94c;--on-green:#0a1a12;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.85;font-size:16px}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+a{color:var(--green-d)}
+:focus-visible{outline:3px solid var(--pencil);outline-offset:2px}
+header.hero{padding:56px 0 40px;border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(2.2rem,7vw,4rem);line-height:1.2;font-weight:900;margin:0 0 16px;letter-spacing:.02em}
+.hero h1 span{background:linear-gradient(transparent 62%,var(--pencil) 62%);padding:0 .1em}
+.hero p.lead{max-width:34em;color:var(--sub);margin:0 0 28px;font-size:1.05rem}
+.count{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:end;background:var(--green);color:var(--on-green);padding:22px 24px;border-radius:6px}
+.count label{display:block;font-size:.85rem;margin-bottom:4px}
+.count input{font:inherit;padding:8px 10px;border-radius:4px;border:0;background:var(--surface);color:var(--ink)}
+.count .days{font-size:1.1rem}
+.count .days b{font-size:3rem;line-height:1;font-weight:900;margin:0 4px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px 20px;padding:14px 0;font-size:.95rem}
+section{padding:48px 0;border-bottom:1px solid var(--line)}
+h2{font-size:1.6rem;margin:0 0 8px;font-weight:900;line-height:1.4}
+.note{color:var(--sub);margin:0 0 24px;max-width:38em}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.box{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--green);padding:16px 18px;border-radius:4px}
+.box h3{margin:0 0 6px;font-size:1.1rem}
+.box p{margin:0;font-size:.95rem;color:var(--sub)}
+.sub-box{border-left-color:var(--pencil)}
+.phase{margin-bottom:28px}
+.phase h3{margin:0 0 4px;font-size:1.2rem}
+.phase .when{color:var(--sub);font-size:.9rem;margin:0 0 10px}
+.phase ul{list-style:none;margin:0;padding:0}
+.phase li{border-bottom:1px solid var(--line)}
+.phase label{display:flex;gap:12px;align-items:flex-start;padding:10px 4px;cursor:pointer}
+.phase input{width:22px;height:22px;margin-top:4px;accent-color:var(--green);flex:none}
+.phase input:checked+span{text-decoration:line-through;color:var(--sub)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);margin-bottom:20px}
+.track{height:12px;background:var(--mint);border-radius:6px;overflow:hidden}
+.fill{height:100%;width:0;background:var(--green);transition:width .3s}
+.bar p{margin:4px 0 0;font-size:.9rem;color:var(--sub)}
+button.reset{font:inherit;background:none;border:1px solid var(--line);color:var(--sub);padding:6px 12px;border-radius:4px;cursor:pointer}
+footer{padding:36px 0 48px;color:var(--sub);font-size:.9rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fill{transition:none}}
+.cp{margin:36px 0 6px;font-size:1.25rem}
+.cp small{font-weight:400;color:var(--sub);font-size:.9rem;margin-left:8px}
+.fac{display:flex;flex-direction:column;gap:10px}
+.fac button{font:inherit;align-self:flex-start;border:1px solid var(--green);background:none;color:var(--green-d);padding:5px 12px;border-radius:4px;cursor:pointer}
+.fac button[aria-pressed="true"]{background:var(--green);color:var(--on-green)}
+.sel{background:var(--mint);padding:12px 16px;border-radius:4px;margin:0 0 8px}
+.back{display:inline-block;margin:20px 0 0}
+.kk{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.9rem}
+.kb{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--pencil);padding:14px 18px;border-radius:4px;margin:0 0 20px}
+.kb p{margin:0 0 6px}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<h1>学部を知って、<span>志望</span>を絞る。</h1>
+<p class="lead">青山学院大学には青山と相模原の2つのキャンパスがあります。気になる学部を候補に入れて、過去問を見る順番を決めましょう。</p>
+</div></header>
+<div class="wrap"><section>
+<h2>学部ガイド</h2>
+<p class="note">学科の構成や入試の科目・配点は年度で変わります。決める前に最新の募集要項を確認してください。</p>
+<div class="kb"><p><b>過去問を見る</b></p><p class="kk"><a href="https://www.toshin.com/daigaku/aoyama/kakomon" target="_blank" rel="noopener">東進の過去問データベース(青学)</a><a href="https://passnavi.obunsha.co.jp/univ/2260/kakomon/" target="_blank" rel="noopener">旺文社パスナビ(青学の過去問)</a></p><p style="font-size:.9rem;color:var(--sub)">東進は無料の会員登録が必要です。パスナビは一部が有料(入試正解デジタルプレミアム)です。どちらも学部ごとのページから選べます。</p></div>
+<div class="sel" id="sel" aria-live="polite">志望候補はまだありません。</div>
+<h3 class="cp">青山キャンパス<small>東京・渋谷区</small></h3><div class="grid"><div class="box fac"><h3>文学部</h3><p>文学・言語・歴史・芸術を幅広く学ぶ学部。読む力と書く力、外国語の力が土台になります。</p><button type="button" data-f="文学部" aria-pressed="false">志望候補にする</button><span class="kk"><a href="https://www.toshin.com/daigaku/aoyama/kakomon" target="_blank" rel="noopener">東進で過去問</a><a href="https://passnavi.obunsha.co.jp/univ/2260/kakomon/" target="_blank" rel="noopener">パスナビで過去問</a></span></div><div class="box fac"><h3>教育人間科学部</h3><p>教育と心理を軸に、人が育つしくみを学ぶ学部。教員を目指す人や心理学に関心がある人向けです。</p><button type="button" data-f="教育人間科学部" aria-pressed="false">志望候補にする</button><span class="kk"><a href="https://www.toshin.com/daigaku/aoyama/kakomon" target="_blank" rel="noopener">東進で過去問</a><a href="https://passnavi.obunsha.co.jp/univ/2260/kakomon/" target="_blank" rel="noopener">パスナビで過去問</a></span></div><div class="box fac"><h3>経済学部</h3><p>経済のしくみを理論とデータの両面から学ぶ学部。数的な考え方に抵抗がないと進めやすい分野です。</p><button type="button" data-f="経済学部" aria-pressed="false">志望候補にする</button><span class="kk"><a href="https://www.toshin.com/daigaku/aoyama/kakomon" target="_blank" rel="noopener">東進で過去問</a><a href="https://passnavi.obunsha.co.jp/univ/2260/kakomon/" target="_blank" rel="noopener">パスナビで過去問</a></span></div><div class="box fac"><h3>法学部</h3><p>法律と社会の制度を学ぶ学部。条文や論理を丁寧に読む力が求められます。</p><button type="button" data-f="法学部" aria-pressed="false">志望候補にする</button><span class="kk"><a href="https://www.toshin.com/daigaku/aoyama/kakomon" target="_blank" rel="noopener">東進で過去問</a><a href="https://passnavi.obunsha.co.jp/univ/2260/kakomon/" target="_blank" rel="noopener">パスナビで過去問</a></span></div><div class="box fac"><h3>経営学部</h3><p>企業の運営やマーケティングを学ぶ学部。社会や市場の動きに興味がある人に向きます。</p><button type="button" data-f="経営学部" aria-pressed="false">志望候補にする</button><span class="kk"><a href="https://www.toshin.com/daigaku/aoyama/kakomon" target="_blank" rel="noopener">東進で過去問</a><a href="https://passnavi.obunsha.co.jp/univ/2260/kakomon/" target="_blank" rel="noopener">パスナビで過去問</a></span></div><div class="box fac"><h3>国際政治経済学部</h3><p>国際政治・国際経済・国際コミュニケーションを学ぶ学部。英語力が学びの前提になります。</p><button type="button" data-f="国際政治経済学部" aria-pressed="false">志望候補にする</button><span class="kk"><a href="https://www.toshin.com/daigaku/aoyama/kakomon" target="_blank" rel="noopener">東進で過去問</a><a href="https://passnavi.obunsha.co.jp/univ/2260/kakomon/" target="_blank" rel="noopener">パスナビで過去問</a></span></div><div class="box fac"><h3>総合文化政策学部</h3><p>文化・メディア・まちづくりなどを政策の視点で学ぶ学部。幅広いテーマに関われます。</p><button type="button" data-f="総合文化政策学部" aria-pressed="false">志望候補にする</button><span class="kk"><a href="https://www.toshin.com/daigaku/aoyama/kakomon" target="_blank" rel="noopener">東進で過去問</a><a href="https://passnavi.obunsha.co.jp/univ/2260/kakomon/" target="_blank" rel="noopener">パスナビで過去問</a></span></div></div><h3 class="cp">相模原キャンパス<small>神奈川・相模原市</small></h3><div class="grid"><div class="box fac"><h3>理工学部</h3><p>物理・化学・数理・電気・機械・情報などを学ぶ理系の学部。数学と理科の基礎力が最優先です。</p><button type="button" data-f="理工学部" aria-pressed="false">志望候補にする</button><span class="kk"><a href="https://www.toshin.com/daigaku/aoyama/kakomon" target="_blank" rel="noopener">東進で過去問</a><a href="https://passnavi.obunsha.co.jp/univ/2260/kakomon/" target="_blank" rel="noopener">パスナビで過去問</a></span></div><div class="box fac"><h3>社会情報学部</h3><p>情報技術と社会の関わりを学ぶ学部。データやメディアの活用に関心がある人向けです。</p><button type="button" data-f="社会情報学部" aria-pressed="false">志望候補にする</button><span class="kk"><a href="https://www.toshin.com/daigaku/aoyama/kakomon" target="_blank" rel="noopener">東進で過去問</a><a href="https://passnavi.obunsha.co.jp/univ/2260/kakomon/" target="_blank" rel="noopener">パスナビで過去問</a></span></div><div class="box fac"><h3>地球社会共生学部</h3><p>地球規模の課題と社会のあり方を学ぶ学部。語学と、世界への関心が学びを支えます。</p><button type="button" data-f="地球社会共生学部" aria-pressed="false">志望候補にする</button><span class="kk"><a href="https://www.toshin.com/daigaku/aoyama/kakomon" target="_blank" rel="noopener">東進で過去問</a><a href="https://passnavi.obunsha.co.jp/univ/2260/kakomon/" target="_blank" rel="noopener">パスナビで過去問</a></span></div><div class="box fac"><h3>コミュニティ人間科学部</h3><p>地域や人のつながりをテーマに、人間と社会を学ぶ学部。フィールドでの学びが特色です。</p><button type="button" data-f="コミュニティ人間科学部" aria-pressed="false">志望候補にする</button><span class="kk"><a href="https://www.toshin.com/daigaku/aoyama/kakomon" target="_blank" rel="noopener">東進で過去問</a><a href="https://passnavi.obunsha.co.jp/univ/2260/kakomon/" target="_blank" rel="noopener">パスナビで過去問</a></span></div></div>
+<a class="back" href="index.html">合格ナビのトップへ戻る</a>
+</section></div>
+<footer><div class="wrap">非公式ガイドです。最新情報は<a href="https://www.aoyama.ac.jp/" target="_blank" rel="noopener">青山学院大学の公式サイト</a>で確認してください。</div></footer>
+<script>
+(function(){var K="aogaku-fav",s=[];
+try{s=JSON.parse(localStorage.getItem(K)||"[]")}catch(e){}
+var bs=document.querySelectorAll("button[data-f]");
+function r(){bs.forEach(function(b){var on=s.indexOf(b.dataset.f)>-1;b.setAttribute("aria-pressed",on);b.textContent=on?"候補に入れました(解除)":"志望候補にする"});
+document.getElementById("sel").textContent=s.length?"志望候補:"+s.join("、"):"志望候補はまだありません。"}
+bs.forEach(function(b){b.addEventListener("click",function(){var f=b.dataset.f,i=s.indexOf(f);if(i>-1)s.splice(i,1);else s.push(f);
+try{localStorage.setItem(K,JSON.stringify(s))}catch(e){}r()})});r()})();
+</script>
+<script>if("serviceWorker" in navigator&&location.protocol.indexOf("http")===0){navigator.serviceWorker.register("sw.js").catch(function(){})}</script>
+</body>
+</html>
