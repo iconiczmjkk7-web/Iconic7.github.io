@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-DOMAIN.example/sitemap.xml
+Sitemap: https://iconiczmjkk7-web.github.io/Iconic7.github.io/sitemap.xml
